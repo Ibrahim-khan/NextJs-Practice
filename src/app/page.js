@@ -1,8 +1,10 @@
 "use client"
-
 import React from "react";
-import State from "./State";
 import { useState } from "react";
+
+
+import State from "./State";
+
 
  function Home() {
 
@@ -23,12 +25,16 @@ import { useState } from "react";
       <p>Value is added: {value}</p>
       <button onClick={add}>Add value</button>
 
-      <button onClick={test}>Click me</button><br/>
-
-      <button><a href="/about">about page</a></button>
-
+      <button onClick={test}>Click me</button>
       
       <State />
+
+      <h4>Routing</h4>
+      <button><a href="/about">about page</a></button>
+
+      <h4>Dynamic Routing</h4>
+
+
     </main>
   );
 }
