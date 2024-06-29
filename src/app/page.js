@@ -23,7 +23,10 @@ import { useState } from "react";
       <p>Value is added: {value}</p>
       <button onClick={add}>Add value</button>
 
-      <button onClick={test}>Click me</button>
+      <button onClick={test}>Click me</button><br/>
+
+      <button><a href="/about">about page</a></button>
+
       
       <State />
     </main>
