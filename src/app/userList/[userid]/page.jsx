@@ -4,6 +4,7 @@ const page = ({params}) => {
   return (
     <div>
       User information is: {params.userid}
+      
     </div>
   )
 }
