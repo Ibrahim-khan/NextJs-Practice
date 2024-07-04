@@ -1,0 +1,13 @@
+.Navbar {
+    list-style: none;
+}
+
+.Navbar li {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.Navbar li:hover {
+    color:green;
+    cursor: pointer;
+}

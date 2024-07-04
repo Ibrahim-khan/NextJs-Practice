@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 import State from "./State";
@@ -9,11 +10,11 @@ import State from "./State";
  function Home() {
 
   const [value, setValue] = useState(0);
+  const Router = useRouter();
 
   const add = () => {
     setValue(value + 1)
   }
-
   const test = () => {
     alert ("Welcome to Next.Js")
   }
@@ -34,6 +35,10 @@ import State from "./State";
 
       <h4>Dynamic Routing</h4>
 
+      <h4>Routing with hook (userRouter)</h4>
+      <button type="button" onClick={() => Router.push("/class")}>go to class page</button>
+
+      <h4>navigation Routing</h4>
 
     </main>
   );
