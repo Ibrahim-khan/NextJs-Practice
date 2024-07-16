@@ -12,12 +12,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}
-        <ul className="Navbar">
+        {
+          pathname !== "userList" ?
+          <ul className="Navbar">
           <li><Link href="/" className={'${pathname === "/" ? "active" : ""}'}>Home</Link></li>
           <li><Link href = "/about" className={'${pathname === "/about" ? "active" : ""}'}>About</Link></li>
           <li><Link href="/userList">userList</Link></li>
           <li><Link href="/registration">Contact</Link></li>
-        </ul>
+        </ul> : null
+        }
       </body>
     </html>
   );
