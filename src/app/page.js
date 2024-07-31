@@ -22,6 +22,7 @@ import State from "./State";
   return (
     <main>
       <h1>Welcome to Next.Js</h1>
+      <img src="next.svg" />
 
       <p>Value is added: {value}</p>
       <button onClick={add}>Add value</button>
